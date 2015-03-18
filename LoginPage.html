@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <LINK href="LoginPage.css" rel="stylesheet" type="text/css">
+	<script src="LoginPage.js"></script>
+    <title>Final</title>
+  </head>
+  <body>
+    <div id="header">
+	  <h1>
+	    Fantasy Football Scouting Report<br><br>
+	 </h1>
+	</div>
+	<div id="subhead">
+	  <h2>
+	    *Preparation is the Foundation of Success*
+	  </h2>
+	</div>
+	<div id="login">
+	<form name="logreg" action="http://web.engr.oregonstate.edu/~afzals/ffscoutingreport.php" onsubmit="return login()" method="Post">
+	  Username: <input type="text" name="userlog"><br>
+      Password: <input type="password" name="passlog"><br>
+	  <div><input type="button" name="log" onclick="login()" value="Login"></div>
+	  </form>
+	  </div>
+	 <div id="register">
+	 <form name="regreg" action="http://web.engr.oregonstate.edu/~afzals/ffscoutingreport.php" onsubmit="return register()" method="Post">
+	  Register Here if New User<br><br>
+	  Username: <input type="text" name="userreg"><br>
+      Password: <input type="password" name="passreg"><br>
+	  Team Color: 
+	  <select name="color">
+	  <option value="black">Black</option>
+	  <option value="white">White</option>
+	  <option value="blue">Blue</option>
+	  <option value="green">Green</option>
+	  <option value="purple">Purple</option>
+	  </select>
+	  <br>
+	  <div><input type="button" name="reg" onclick="register()" value="Register"></div>
+	  </form>
+	  </div>
+  </body>  
+</html>
